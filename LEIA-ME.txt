@@ -1,0 +1,17 @@
+# Contagem Regressiva FLL — Code Mine + Mine Bot
+
+## Como abrir
+1. Extraia o arquivo ZIP.
+2. Abra a pasta `site_contagem_fll`.
+3. Dê dois cliques em `index.html` para abrir o site no navegador.
+
+Não é necessário instalar nada nem ter servidor para testar localmente. É necessária conexão com a internet para carregar as fontes do Google Fonts; sem internet, o site usa fontes alternativas.
+
+## Publicar online
+Envie todos os arquivos e a pasta `assets` para um serviço de hospedagem estática, como GitHub Pages, Netlify ou Vercel. Não envie apenas o `index.html`: o CSS, JavaScript e as imagens também são necessários.
+
+## Data do evento
+O contador está configurado para 11 de novembro de 2026 às 00:00 no horário de Brasília. Para mudar a data, edite a constante `EVENT_DATE` no arquivo `script.js`.
+
+## Logotipos institucionais
+As imagens de Code Mine e Mine Bot fornecidas foram incluídas na pasta `assets`. Os elementos SESI SENAI e FLL no cabeçalho são tratamentos tipográficos provisórios, não arquivos oficiais vetoriais; substitua-os pelos arquivos oficiais aprovados antes de divulgar institucionalmente.

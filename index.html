@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050814">
+  <meta name="description" content="Contagem regressiva das equipes Code Mine e Mine Bot para o Torneio Regional FIRST LEGO League de Goiás.">
+  <title>Contagem Regressiva | Code Mine + Mine Bot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-blue"></div>
+  <div class="ambient ambient-purple"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="topbar">
+    <div class="institution brand-sesi" aria-label="SESI SENAI">
+      <span class="sesi">SESI</span><span class="senai">SENAI</span>
+      <small>PELO FUTURO DO TRABALHO</small>
+    </div>
+    <div class="header-divider"></div>
+    <div class="fll-brand">
+      <span class="fll-symbol">FLL</span>
+      <span><strong>FIRST LEGO</strong><small>LEAGUE</small></span>
+    </div>
+    <div class="header-divider"></div>
+    <div class="event-brand">
+      <span>TORNEIO REGIONAL</span>
+      <strong>GOIÁS <i>2026</i></strong>
+    </div>
+  </header>
+
+  <main class="main-layout">
+    <aside class="team team-code">
+      <div class="team-glow"></div>
+      <img src="assets/code-mine.jpg" alt="Emblema da equipe Code Mine com ema robótica" class="team-logo">
+      <div class="team-label"><span class="team-dot"></span> EQUIPE CODE MINE</div>
+      <div class="quote quote-code"><span class="quote-icon">⌘</span><p>O futuro é construído por quem se prepara <b>hoje.</b></p></div>
+      <div class="quote quote-code"><span class="quote-icon">⚙</span><p>Robôs são construídos com peças. Campeões são construídos com <b>trabalho em equipe.</b></p></div>
+      <div class="quote quote-code"><span class="quote-icon">↗</span><p>A vitória começa muito antes da arena.</p></div>
+    </aside>
+
+    <section class="countdown-panel" aria-labelledby="headline">
+      <div class="eyebrow"><span class="live-dot"></span> A CONTAGEM REGRESSIVA</div>
+      <h1 id="headline">COMEÇOU<span>!</span></h1>
+      <div class="center-rule"><span></span><b>MISSÃO: REGIONAL FLL</b><span></span></div>
+
+      <div class="days-wrap">
+        <div class="days-number" id="days">--</div>
+        <div class="days-label">DIAS <span>PARA O REGIONAL</span></div>
+      </div>
+
+      <div class="clock" aria-label="Horas, minutos e segundos restantes">
+        <div class="clock-unit"><strong id="hours">00</strong><span>HORAS</span></div>
+        <i>:</i>
+        <div class="clock-unit"><strong id="minutes">00</strong><span>MINUTOS</span></div>
+        <i>:</i>
+        <div class="clock-unit"><strong id="seconds">00</strong><span>SEGUNDOS</span></div>
+      </div>
+
+      <div class="event-date"><span class="calendar-icon">▦</span><span>11 DE NOVEMBRO DE 2026</span><b>•</b><span>GOIÁS</span></div>
+      <p class="main-motto">CADA SEGUNDO CONTA.<br><strong>CADA EQUIPE FAZ A DIFERENÇA.</strong></p>
+      <div class="progress-track"><div class="progress-line"></div></div>
+      <div class="team-unity">DUAS EQUIPES. <b>UM PROPÓSITO.</b> UMA GRANDE EXPERIÊNCIA.</div>
+    </section>
+
+    <aside class="team team-mine">
+      <div class="team-glow"></div>
+      <img src="assets/mine-bot.png" alt="Emblema da equipe Mine Bot com vaga-lume robótico" class="team-logo">
+      <div class="team-label"><span class="team-dot"></span> EQUIPE MINE BOT</div>
+      <div class="quote quote-mine"><span class="quote-icon">✦</span><p>Grandes desafios exigem grandes <b>equipes.</b></p></div>
+      <div class="quote quote-mine"><span class="quote-icon">⌁</span><p>Errar, aprender, ajustar e tentar <b>novamente.</b></p></div>
+      <div class="quote quote-mine"><span class="quote-icon">✧</span><p>Juntos somos mais inteligentes.</p></div>
+    </aside>
+  </main>
+
+  <section class="bottom-quotes" aria-label="Mensagens de motivação">
+    <div><span>01 / INOVAÇÃO</span><p>Inove. Programe. Construa. <b>Supere.</b></p></div>
+    <div><span>02 / COLABORAÇÃO</span><p>Não é apenas robótica: é criatividade, ciência e <b>colaboração.</b></p></div>
+    <div><span>03 / DESAFIO</span><p>O próximo desafio pode ser o nosso melhor <b>projeto.</b></p></div>
+  </section>
+
+  <footer>
+    <span class="footer-mark">◆</span>
+    <span>SESI MINEIROS · ROBÓTICA EDUCACIONAL</span>
+    <span class="footer-mark">◆</span>
+  </footer>
+  <div class="event-complete" id="eventComplete" hidden>
+    <strong>CHEGOU O DIA!</strong>
+    <span>É hora de mostrar tudo o que vocês construíram juntos. Boa competição!</span>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
