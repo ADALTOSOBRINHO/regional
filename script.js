@@ -1,6 +1,6 @@
 // Data do evento: 11/11/2026 à meia-noite, horário de Brasília (UTC-03:00).
 // Para alterar a data, edite a constante EVENT_DATE abaixo.
-const EVENT_DATE = new Date("2026-11-11T00:00:00-03:00");
+const EVENT_DATE = new Date("2026-11-11T09:00:00-03:00");
 
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
