@@ -1,8 +1,8 @@
-// Data do evento: 11/11/2026 à meia-noite, horário de Brasília (UTC-03:00).
-// Para alterar a data, edite a constante EVENT_DATE abaixo.
+
+// Data do evento: 11/11/2026 às 09:00, horário de Brasília (UTC-03:00).
+// Para alterar a data/hora, edite a constante EVENT_DATE abaixo.
 const EVENT_DATE = new Date("2026-11-11T09:00:00-03:00");
 
-const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
@@ -17,7 +17,6 @@ function updateCountdown() {
   const difference = EVENT_DATE.getTime() - now.getTime();
 
   if (difference <= 0) {
-    daysEl.textContent = "00";
     hoursEl.textContent = "00";
     minutesEl.textContent = "00";
     secondsEl.textContent = "00";
@@ -27,16 +26,14 @@ function updateCountdown() {
   }
 
   const totalSeconds = Math.floor(difference / 1000);
-  const days = Math.floor(totalSeconds / 86400);
-  const hours = Math.floor((totalSeconds % 86400) / 3600);
+  const totalHours = Math.floor(totalSeconds / 3600); // total de horas, sem converter em dias
   const minutes = Math.floor((totalSeconds % 3600) / 60);
   const seconds = totalSeconds % 60;
 
-  daysEl.textContent = days;
-  hoursEl.textContent = pad(hours);
+  hoursEl.textContent = totalHours;
   minutesEl.textContent = pad(minutes);
   secondsEl.textContent = pad(seconds);
-  document.title = `${days} dias para o Regional FLL | Code Mine + Mine Bot`;
+  document.title = `${totalHours} horas para o Regional FLL | Code Mine + Mine Bot`;
 }
 
 updateCountdown();
